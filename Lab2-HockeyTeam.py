@@ -12,8 +12,11 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
-
-
+    #team names
+    #number of wins
+    #number of losses
+    print("Welcome")
+    #input(Welcome to the record)
 
 
 
