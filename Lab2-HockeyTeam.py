@@ -13,13 +13,25 @@
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
     #team names
+    Jewels  = "Kuala Lumpur Jewels"
+    Beavers = "Halifax Beavers"
+    Whales = "Ho Chi Ming Whales"
+    Frogs = "Minsk Frogs"
+    Rovers = "Bogota Rovers"
+    Royales = "Singapore Royales"
     #number of wins
     #number of losses
-    print("Welcome")
+
+
+    #welcome user to the software
+    print("Welcome to the Hockey win/loss database. We tell you how many wins, how many losses and their win percentage.\n Just ask and you shall receive!")
+    
+    #print team names
+    print("We offer statistics for the following teams:\nJewels\nBeavers\nWhales\nFrogs\nRovers\nRoyales")
+
     #input(Welcome to the record)
-
-
-
+    userTeam = input("Please enter the a team here:")
+    #print("The userTeam have a record of (record(userTeam)), with a win percentage of)
 
 
 
