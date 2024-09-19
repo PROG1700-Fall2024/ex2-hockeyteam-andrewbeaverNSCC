@@ -55,7 +55,7 @@ def main():
     userTeam = input("Please enter the team here: ")
     
     #print team name and record
-    print(("The record and win-loss ratio is 8-4 and " + str(winPercentage1), "for the " + fullTeam1) * (userTeam =="Jewels"),end="")
+    print(("The record and win-loss ratio is 8-4 and" + str(winPercentage1), "for the " + fullTeam1) * (userTeam =="Jewels"),end="")
     print(("The record and win-loss ratio is 5-7 and " + str(winPercentage2), "for the " + fullTeam2) * (userTeam =="Beavers"), end="")
     print(("The record and win-loss ratio is 9-3 and "+ str(winPercentage3), "for the " + fullTeam3)* (userTeam =="Whales"), end="")
     print(("The record and win-loss ratio is 2-10 and "+ str(winPercentage4), "for the " + fullTeam4)* (userTeam =="Frogs"))
