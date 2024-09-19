@@ -13,28 +13,55 @@
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
     #team names
-    Jewels  = "Kuala Lumpur Jewels"
-    Beavers = "Halifax Beavers"
-    Whales = "Ho Chi Ming Whales"
-    Frogs = "Minsk Frogs"
-    Rovers = "Bogota Rovers"
-    Royales = "Singapore Royales"
-    #number of wins
-    #number of losses
+    fullTeam1 = "Kuala Lumpur" + " " + "Jewels" 
 
+    fullTeam2 = "Singapore" + " " + "Beavers" 
+
+    fullTeam3 = "Ho Chi Ming" + " " + "Whales"
+
+    fullTeam4 = "Bogota" + " " + "Frogs"
+
+    #number of wins/losses and math
+    wins1 = 8
+    losses1 = 4
+
+    wins2 = 5
+    losses2 = 7
+
+    wins3 = 9
+    losses3 = 3
+
+    wins4 = 2
+    losses4 = 10
+    
+    winFormula1 = (wins1/12)
+    winFormula2 = (wins2/12)
+    winFormula3 = (wins3/12)
+    winFormula4 = (wins4/12)
+
+    winPercentage1 = ("{:.4f}".format(winFormula1))
+    winPercentage2 = ("{:.4f}".format(winFormula2))
+    winPercentage3 = ("{:.4f}".format(winFormula3))
+    winPercentage4 = ("{:.4f}".format(winFormula4))
 
     #welcome user to the software
     print("Welcome to the Hockey win/loss database. We tell you how many wins, how many losses and their win percentage.\n Just ask and you shall receive!")
     
     #print team names
-    print("We offer statistics for the following teams:\nJewels\nBeavers\nWhales\nFrogs\nRovers\nRoyales")
+    print("We offer statistics for the following teams:\nJewels\nBeavers\nWhales\nFrogs")
+    
+    
+    #user inputs team name
+    userTeam = input("Please enter the team here: ")
+    
+    #print team name and record
+    print(("The record and win-loss ratio is 8-4 and" + str(winPercentage1), "for the " + fullTeam1) * (userTeam =="Jewels"),end="")
+    print(("The record and win-loss ratio is 5-7 and " + str(winPercentage2), "for the " + fullTeam2) * (userTeam =="Beavers"), end="")
+    print(("The record and win-loss ratio is 9-3 and "+ str(winPercentage3), "for the " + fullTeam3)* (userTeam =="Whales"), end="")
+    print(("The record and win-loss ratio is 2-10 and "+ str(winPercentage4), "for the " + fullTeam4)* (userTeam =="Frogs"))
 
-    #input(Welcome to the record)
-    userTeam = input("Please enter the a team here:")
-    #print("The userTeam have a record of (record(userTeam)), with a win percentage of)
-
-
-
+    #end the program
+    print("Thanks for using this program!")
     # YOUR CODE ENDS HERE
 
 main()
